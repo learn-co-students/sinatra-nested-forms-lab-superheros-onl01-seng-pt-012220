@@ -1,3 +1,14 @@
-
-
-
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>TEAM</h1>
+    <h2>Name <%= @team_name %></h1>
+    <h2>Motto: <%= @team_motto %></h2>
+    <h1>HEROES</h1>
+    <% @team_members.each do |hero| %>
+    <h2>Name: <%= hero["name"] %></h2>
+    <p>Power(s): <%= hero["power"] %><br />
+     Bio: <%= hero["bio"] %></p>
+    <% end %>
+  </body>
+</html>
