@@ -1,3 +1,14 @@
-
-
+<div style="text-align:center; color: white">
+    <h1 style="font-size: 50px; color:red">Your Team and Heroes!</h1>
+    <br>
+    <h2><span style="color:#330000">Team </span><%= @team.name %></h2>
+    <h3 style="color:#191970"><span style="color:000033">Team Motto: </span><%= @team.motto %></h3>
+    <br>
+    <% @members.each do |member| %>
+      <h3><span style="color:#800000">Hero Name: </span> <%= member.name %></h3>
+      <p><span style="color:#800000">Hero Power: </span><%= member.power %></p>
+      <p><span style="color:#800000">Hero Biography: </span><%= member.bio %></p>
+      <br>
+    <% end %>
+</div>
 
